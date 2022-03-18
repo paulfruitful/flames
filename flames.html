@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms.myForm.fname.value;
+  var y= document.forms.myForm.sname.value;
+  var z=[...x];
+  var u=[...y];
+  var c=z.filter(h=>!u.includes(h)?h:null);
+  var w=u.filter(h=>!z.includes(h)?h:null);
+  var output=c.length+w.length;
+  function doit(){
+    switch(output){  
+
+      case 1:
+    alert(x+""+"and"+""+y+""+" are Friends");
+    break;
+
+      case 2:
+        alert(x+""+"and"+""+y+""+"are Lovers");
+        break;
+      case 3:
+    alert(x+""+"and"+""+y+""+"are Admirers");
+    break;
+
+      case 4:
+        alert(x+""+" and "+""+y+" "+"are"+""+"Married");
+        break;
+
+      case 5:
+            alert(x+" and "+y+""+"are"+""+"Enemies");
+            break;
+      case 6:
+        alert(x+""+"and"+""+y+""+"are"+""+"Secret Lovers");
+                break;
+      case 7:
+                    alert(x+""+" and "+""+y+""+"are"+""+"Friends");
+                    break;
+      case 8:
+                        alert(x+" and "+""+y+""+"are"+""+"Lovers");
+                        break;
+      case 9:
+                           alert(x+""+" and "+""+y+""+"are"+""+"Admirers");
+                            break;
+      case 10:
+                                alert(x+""+" and "+""+y+" "+"are Married");
+                                break;
+      case 11:
+                                    alert(x+""+" and "+y+""+"are"+""+"Enemies");
+                                    break;
+      case 12:
+                                        alert(x+""+" and "+""+y+""+"are"+""+"Secret Lovers");
+                                        break;
+            
+      case 13:
+    alert(x+""+" and "+""+y+""+"are"+""+"Friends");
+    break;
+      case 14:
+        alert(x+""+" and "+y+""+" are"+""+"Lovers");
+        break;
+      case 15:
+            alert(x+""+" and "+""+y+""+"are"+""+"Admirers");
+            break;
+      case 16:
+                alert(x+""+" and "+" "+y+" "+"are Married");
+                break;
+      case 17:
+                    alert(x+""+" and "+""+y+""+"are"+""+"Enemies");
+                    break;
+      case 18:
+                        alert(x+""+" and "+""+y+""+"are"+""+"Secret Lovers");
+                        break;
+      case 19:
+                            alert(x+""+"and"+""+y+""+"are"+""+"Friends");
+                            break;
+
+
+
+
+
+}
+  }
+   
+  return doit() ;
+
+
+}
+</script>
+<link rel="stylesheet" type="text/css" href="flames.css">
+</head>
+<body>
+
+<form name="myForm"  onsubmit="return validateForm()" method="post">
+   <h1>Flames</h1>
+   <input type="text" name="fname" placeholder="Enter Firstname"><br>
+   <input type="text" name="sname" placeholder="Enter Secondname"><br>
+  <input type="submit" value="Match">
+  <a href="mailto:fruitful2007@outlook.com" id="copy">Created And Designed By Paul Fruitful</a>
+</form>
+</body>
+</html>
